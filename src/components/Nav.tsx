@@ -14,7 +14,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: '공간',      href: '#gallery',  sectionKey: 'gallery' },
   { label: '소개',      href: '#about',    sectionKey: 'about' },
   { label: '프로그램',  href: '#programs', sectionKey: 'programs' },
-  { label: '트레이너',  href: '#trainers', sectionKey: 'trainers' },
+  { label: '강사진',    href: '#trainers', sectionKey: 'trainers' },
   { label: '회원권',    href: '#pricing',  sectionKey: 'pricing' },
   { label: '오시는 길', href: '#location', sectionKey: 'location' },
   { label: '문의',      href: '#contact',  sectionKey: 'contact' },

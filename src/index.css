@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Trainer marquee ────────────────────────────────────── */
+@keyframes trainerMarquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* ─── Scrollbar ──────────────────────────────────────────── */
 * { scrollbar-width: none; }
 *::-webkit-scrollbar { display: none; }

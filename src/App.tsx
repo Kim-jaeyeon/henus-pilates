@@ -21,7 +21,7 @@ export default function App({ config }: Props) {
   const s = config.sections ?? {};
 
   useEffect(() => {
-    const lenis = new Lenis({ lerp: 0.07, smoothWheel: true });
+    const lenis = new Lenis({ lerp: 0.07, smoothWheel: true, syncTouch: true, syncTouchLerp: 0.07 });
     (window as unknown as Record<string, unknown>).__lenis = lenis;
     function raf(time: number) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);

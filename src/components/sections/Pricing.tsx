@@ -26,12 +26,10 @@ export default function Pricing({ config }: { config: PricingConfig }) {
 
         {/* Event card */}
         {config.event && (
-          <div data-animate className="max-sm:flex-col sm:grid"
+          <div data-animate className="flex flex-col md:grid md:grid-cols-[1fr_auto]"
             style={{ ...d(120), borderRadius: 20, overflow: 'hidden', marginBottom: 12,
               background: 'rgba(255,255,255,0.10)', backdropFilter: 'blur(8px)',
               boxShadow: 'inset 0 0.5px 0 rgba(255,255,255,0.18)',
-              display: 'flex', flexDirection: 'column',
-              gridTemplateColumns: '1fr auto',
             }}>
             {/* Text */}
             <div style={{ padding: '22px 22px 16px', display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -62,11 +60,10 @@ export default function Pricing({ config }: { config: PricingConfig }) {
             </div>
             {/* Image — bottom on mobile, right on sm+ */}
             {config.event.imageUrl && (
-              <div className="max-sm:pb-5 sm:py-4 sm:pr-4" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="max-md:pb-5 md:py-4 md:pr-4" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img src={config.event.imageUrl} alt={config.event.title}
-                  className="max-sm:w-2/3 sm:w-auto"
                   style={{ height: 'auto', display: 'block', borderRadius: 14,
-                    width: 'clamp(120px, 16vw, 160px)' }} />
+                    width: 'clamp(140px, 18vw, 220px)' }} />
               </div>
             )}
           </div>
