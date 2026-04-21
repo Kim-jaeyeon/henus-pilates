@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Landing Template · Pavilion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TWEAK DEFAULTS (editable; persist via parent)               -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<script>
+window.__TWEAKS = /*EDITMODE-BEGIN*/{
+  "studioName": "JUNG STUDIO",
+  "studioNameKr": "정 스튜디오",
+  "primaryColor": "#5a6247",
+  "heroVariant": "editorial",
+  "tone": "warm"
+}/*EDITMODE-END*/;
+</script>
+
+<div class="pavilion-stage">
+
+  <div class="stage-header">
+    <h1>Studio Landing <em>— Template</em></h1>
+    <div class="meta">헬스장 · 필라테스 · PT샵 · Mobile-first · 한국어</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- PHONE / LANDING PAGE                                    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="phone" id="phone" data-tone="cream" data-hero="editorial" data-screen-label="Landing — Studio Template">
+
+    <!-- status bar -->
+    <div class="statusbar on-dark" id="statusbar">
+      <span class="time">9:41</span>
+      <span class="icons">
+        <svg width="18" height="11" viewBox="0 0 18 11"><rect x="0" y="7" width="3" height="4" rx="0.6" fill="currentColor"/><rect x="5" y="5" width="3" height="6" rx="0.6" fill="currentColor"/><rect x="10" y="2" width="3" height="9" rx="0.6" fill="currentColor"/><rect x="15" y="0" width="3" height="11" rx="0.6" fill="currentColor"/></svg>
+        <svg width="25" height="12" viewBox="0 0 25 12"><rect x="0.5" y="0.5" width="22" height="11" rx="3" stroke="currentColor" fill="none" opacity="0.4"/><rect x="2" y="2" width="18" height="8" rx="2" fill="currentColor"/></svg>
+      </span>
+    </div>
+
+    <!-- top nav -->
+    <div class="topnav">
+      <div class="glass brand-pill">
+        <span class="brand-mark" id="brandMark">J</span>
+        <span id="brandName">JUNG STUDIO</span>
+      </div>
+      <div class="glass menu-btn">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h8"/></svg>
+      </div>
+    </div>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <span class="hero-label">hero · 스튜디오 전경</span>
+      <div class="hero-content">
+        <div class="overline">BOUTIQUE WELLNESS · SEOUL</div>
+        <h2 class="display">당신만의<br><em>사원</em>을<br>찾으세요.</h2>
+        <p class="hero-sub">
+          한 사람에게 집중하는 프라이빗 필라테스·PT·스트렝스 스튜디오. 움직임의 본질로 돌아갑니다.
+        </p>
+        <div class="cta-row">
+          <button class="btn btn-primary">
+            무료 체험 예약
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+          </button>
+          <button class="btn btn-secondary">둘러보기</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="bg-cream">
+      <div class="section-head">
+        <div class="overline">01 · 소개</div>
+        <h3>공간보다<br><em>호흡</em>을 설계합니다.</h3>
+        <p>복작이는 도시 한복판, 조용히 숨을 고르는 여섯 평의 스튜디오. 전직 무용수가 이끄는 원·투 프라이빗 세션으로 시작해 지금은 세 명의 교사가 함께합니다.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img tall">
+          <span class="about-label">reformer · room</span>
+        </div>
+        <div class="about-img offset">
+          <span class="about-label">mat · natural light</span>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat"><div class="num">06</div><div class="label">REFORMER BEDS</div></div>
+        <div class="stat"><div class="num">218</div><div class="label">MEMBERS</div></div>
+        <div class="stat"><div class="num">4.9</div><div class="label">RATING</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROGRAMS ═══════════ -->
+    <section class="bg-low">
+      <div class="section-head">
+        <div class="overline">02 · 프로그램</div>
+        <h3><em>네 가지</em> 움직임의<br>언어.</h3>
+        <p>필라테스부터 PT, 스트렝스, 회복까지 — 당신의 신체와 목적에 맞게 선택하세요.</p>
+      </div>
+
+      <div class="program-stack">
+        <div class="program">
+          <div class="program-num">01</div>
+          <div>
+            <h4>프라이빗 필라테스</h4>
+            <p>리포머 · 매트 · 바렐 · 50분 세션, 1:1 또는 듀엣</p>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="program">
+          <div class="program-num">02</div>
+          <div>
+            <h4>1:1 퍼스널 트레이닝</h4>
+            <p>체형 분석 기반 맞춤 PT · 부상 회복 · 자세 교정</p>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="program">
+          <div class="program-num">03</div>
+          <div>
+            <h4>스트렝스 & 컨디셔닝</h4>
+            <p>근력 · 기능성 운동 · 소그룹 최대 4인</p>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="program">
+          <div class="program-num">04</div>
+          <div>
+            <h4>회복 & 모빌리티</h4>
+            <p>스트레칭 · 근막이완 · 호흡 트레이닝</p>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TRAINERS ═══════════ -->
+    <section class="bg-cream">
+      <div class="section-head">
+        <div class="overline">03 · 트레이너</div>
+        <h3>이 공간을<br>만드는 <em>사람들</em>.</h3>
+        <p>저마다 다른 배경, 같은 철학. 움직임은 회복이어야 합니다.</p>
+      </div>
+
+      <div class="trainer-rail">
+        <div class="trainer">
+          <div class="trainer-img"></div>
+          <div class="trainer-meta">
+            <div class="trainer-role">HEAD INSTRUCTOR</div>
+            <div class="trainer-name">정지혜</div>
+            <div class="trainer-tags">
+              <span class="chip">필라테스</span><span class="chip">재활</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer">
+          <div class="trainer-img" style="background: repeating-linear-gradient(50deg, #e6d5ae 0 14px, #d9c493 14px 28px);"></div>
+          <div class="trainer-meta">
+            <div class="trainer-role">PT SPECIALIST</div>
+            <div class="trainer-name">박민호</div>
+            <div class="trainer-tags">
+              <span class="chip">스트렝스</span><span class="chip">자세교정</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer">
+          <div class="trainer-img" style="background: repeating-linear-gradient(24deg, #d4d9c4 0 12px, #bfc7ad 12px 24px);"></div>
+          <div class="trainer-meta">
+            <div class="trainer-role">INSTRUCTOR</div>
+            <div class="trainer-name">이소현</div>
+            <div class="trainer-tags">
+              <span class="chip">바렐</span><span class="chip">모빌리티</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ GALLERY ═══════════ -->
+    <section class="bg-low">
+      <div class="section-head">
+        <div class="overline">04 · 공간</div>
+        <h3>빛이 머무는<br><em>자리</em>.</h3>
+      </div>
+      <div class="gallery">
+        <div class="tile a"><span class="tile-label">reformer room</span></div>
+        <div class="tile b"><span class="tile-label">lounge</span></div>
+        <div class="tile c"><span class="tile-label">shower</span></div>
+        <div class="tile d"><span class="tile-label">entry</span></div>
+        <div class="tile e"><span class="tile-label">locker</span></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PRICING ═══════════ -->
+    <section class="bg-sage">
+      <div class="section-head">
+        <div class="overline">05 · 회원권</div>
+        <h3>단순한<br><em>세 가지</em> 선택.</h3>
+        <p>부담 없이 시작하고, 필요에 맞게 확장하세요.</p>
+      </div>
+
+      <div class="price-stack">
+        <div class="price-card">
+          <div class="price-head">
+            <div>
+              <h4 class="price-name">체험</h4>
+            </div>
+          </div>
+          <div class="price-amount">₩ 50,000<span class="unit">/ 1회</span></div>
+          <ul class="price-list">
+            <li>프라이빗 50분 세션</li>
+            <li>체형·움직임 분석 포함</li>
+          </ul>
+          <button class="price-cta">체험 예약하기</button>
+        </div>
+
+        <div class="price-card featured">
+          <div class="price-head">
+            <div>
+              <h4 class="price-name">월 8회</h4>
+            </div>
+            <span class="price-tag">MOST CHOSEN</span>
+          </div>
+          <div class="price-amount">₩ 560,000<span class="unit">/ 월</span></div>
+          <ul class="price-list">
+            <li>주 2회, 50분 프라이빗</li>
+            <li>모든 프로그램 이용</li>
+            <li>라커 · 샤워 · 어메니티</li>
+            <li>스케줄 자유 변경</li>
+          </ul>
+          <button class="price-cta">가입하기</button>
+        </div>
+
+        <div class="price-card">
+          <div class="price-head">
+            <div>
+              <h4 class="price-name">월 12회</h4>
+            </div>
+          </div>
+          <div class="price-amount">₩ 780,000<span class="unit">/ 월</span></div>
+          <ul class="price-list">
+            <li>주 3회, 50분 프라이빗</li>
+            <li>무제한 회복 세션</li>
+          </ul>
+          <button class="price-cta">가입하기</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ LOCATION ═══════════ -->
+    <section class="bg-cream">
+      <div class="section-head">
+        <div class="overline">06 · 오시는 길</div>
+        <h3>한남동의<br>조용한 <em>골목</em>.</h3>
+      </div>
+
+      <div class="map-wrap">
+        <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="mg" width="24" height="24" patternUnits="userSpaceOnUse">
+              <path d="M24 0H0v24" stroke="#d8d5cd" stroke-width="0.5" fill="none"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="260" fill="#f5f3f0"/>
+          <rect width="400" height="260" fill="url(#mg)"/>
+          <path d="M-20 100 Q 140 70 220 140 T 420 190" stroke="#e3ddce" stroke-width="22" fill="none"/>
+          <path d="M80 -20 Q 110 120 200 220 T 300 320" stroke="#e8e3d5" stroke-width="16" fill="none"/>
+          <rect x="20" y="30" width="70" height="50" rx="8" fill="#d6dec3" opacity="0.6"/>
+          <rect x="300" y="70" width="80" height="60" rx="8" fill="#d6dec3" opacity="0.5"/>
+          <circle cx="200" cy="130" r="22" fill="#5a6247" fill-opacity="0.15"/>
+          <circle cx="200" cy="130" r="11" fill="#5a6247"/>
+          <circle cx="200" cy="130" r="5" fill="#fff"/>
+        </svg>
+        <div class="map-chip glass">
+          <span style="width:6px;height:6px;border-radius:99px;background:var(--primary);"></span>
+          서울 용산구 한남동
+        </div>
+      </div>
+
+      <div class="location-details">
+        <div class="loc-item">
+          <div class="loc-key">주소</div>
+          <div class="loc-val">
+            <strong>서울 용산구 한남대로 00길 00</strong>
+            2층, 03000
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-key">운영</div>
+          <div class="loc-val">
+            <strong>평일 06:30 — 22:00</strong>
+            주말 08:00 — 18:00 · 공휴일 휴무
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-key">교통</div>
+          <div class="loc-val">
+            <strong>한남역 2번 출구 도보 7분</strong>
+            주차 2시간 무료 (건물 지하 B2)
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-key">연락</div>
+          <div class="loc-val">
+            <strong>02-000-0000</strong>
+            카카오채널 @jungstudio
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="bg-low" style="padding-bottom: 120px;">
+      <div class="section-head">
+        <div class="overline">07 · 상담 문의</div>
+        <h3>첫 걸음,<br>이곳에서 <em>시작</em>하세요.</h3>
+        <p>빠르게 답변드리겠습니다. 체험은 보통 24시간 이내에 배정됩니다.</p>
+      </div>
+
+      <form class="form" onsubmit="return false;">
+        <div class="field">
+          <label>이름</label>
+          <input class="input" type="text" placeholder="홍길동"/>
+        </div>
+        <div class="field">
+          <label>연락처</label>
+          <input class="input" type="tel" placeholder="010-0000-0000"/>
+        </div>
+        <div class="field">
+          <label>관심 프로그램</label>
+          <div class="chip-row">
+            <span class="chip on">필라테스</span>
+            <span class="chip">PT</span>
+            <span class="chip">스트렝스</span>
+            <span class="chip">회복</span>
+          </div>
+        </div>
+        <div class="field">
+          <label>메시지</label>
+          <textarea class="input" placeholder="원하시는 상담 내용, 선호 시간대 등을 편하게 남겨주세요."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%; justify-content:center; margin-top:6px;">
+          상담 신청하기
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+        </button>
+      </form>
+
+      <!-- sticky CTA -->
+      <div class="sticky-cta">
+        <div class="pill">
+          <div class="pill-text">
+            첫 체험<br>
+            <span class="sub">50,000원 · 50분 프라이빗</span>
+          </div>
+          <button class="btn btn-primary" style="padding: 12px 18px; font-size: 13px;">예약 →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="brand" id="brandFooter">JUNG STUDIO</div>
+      <div>서울 용산구 한남대로 00길 00, 2층</div>
+      <div class="fline"><span>02-000-0000</span><span>hello@jungstudio.kr</span></div>
+
+      <div class="socials">
+        <div class="social">IG</div>
+        <div class="social">NB</div>
+        <div class="social">KT</div>
+        <div class="social">YT</div>
+      </div>
+
+      <div style="display:flex; gap: 16px; font-size:12px; color: rgba(255,255,255,0.55);">
+        <a>이용약관</a><a>개인정보처리방침</a><a>환불정책</a>
+      </div>
+
+      <div class="copy">© 2026 Jung Studio · 사업자등록 000-00-00000</div>
+    </footer>
+
+    <!-- home indicator -->
+    <div class="home-indicator"><div class="bar"></div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TWEAKS PANEL                                                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="tweaks" id="tweaks">
+  <h4>Tweaks <em>—</em> 템플릿</h4>
+
+  <div class="row">
+    <label>스튜디오 이름 (영문)</label>
+    <input type="text" id="tk-name" value="JUNG STUDIO"/>
+  </div>
+  <div class="row">
+    <label>스튜디오 이름 (국문)</label>
+    <input type="text" id="tk-name-kr" value="정 스튜디오"/>
+  </div>
+
+  <div class="row">
+    <label>Primary Accent</label>
+    <div class="swatches" id="tk-swatches">
+      <div class="sw on" data-c="#5a6247" style="background:#5a6247"></div>
+      <div class="sw" data-c="#2a2a28" style="background:#2a2a28"></div>
+      <div class="sw" data-c="#7d5a3a" style="background:#7d5a3a"></div>
+      <div class="sw" data-c="#3d5b6e" style="background:#3d5b6e"></div>
+      <div class="sw" data-c="#a6894f" style="background:#a6894f"></div>
+      <div class="sw" data-c="#8b3a3a" style="background:#8b3a3a"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <label>Hero 레이아웃</label>
+    <div class="seg" id="tk-hero">
+      <button class="on" data-v="editorial">Editorial</button>
+      <button data-v="centered">Centered</button>
+      <button data-v="split">Split</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <label>톤 variant</label>
+    <div class="seg" id="tk-tone">
+      <button class="on" data-v="cream">Cream</button>
+      <button data-v="mono">Mono</button>
+      <button data-v="warm">Warm</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const TW = window.__TWEAKS;
+
+  // ─────────── Edit mode protocol ───────────
+  window.addEventListener('message', (e) => {
+    const d = e.data || {};
+    if (d.type === '__activate_edit_mode') {
+      document.getElementById('tweaks').classList.add('open');
+    } else if (d.type === '__deactivate_edit_mode') {
+      document.getElementById('tweaks').classList.remove('open');
+    }
+  });
+  try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch (_) {}
+
+  function persist(edits) {
+    try { window.parent.postMessage({ type: '__edit_mode_set_keys', edits }, '*'); } catch (_) {}
+  }
+
+  // ─────────── Apply tweaks ───────────
+  function setPrimary(hex) {
+    const root = document.documentElement;
+    root.style.setProperty('--primary', hex);
+    // derive container (light) + soft (mid) in oklch — fallback tint
+    root.style.setProperty('--primary-soft', mix(hex, '#ffffff', 0.35));
+    root.style.setProperty('--primary-container', mix(hex, '#ffffff', 0.78));
+    root.style.setProperty('--on-primary-container', mix(hex, '#000000', 0.3));
+  }
+  function setName(en, kr) {
+    document.getElementById('brandName').textContent = en;
+    document.getElementById('brandFooter').textContent = en;
+    document.getElementById('brandMark').textContent = (en || 'S').trim().charAt(0).toUpperCase();
+  }
+  function setHero(v) {
+    document.getElementById('phone').dataset.hero = v;
+    const h = document.querySelector('.hero');
+    const content = document.querySelector('.hero-content');
+    if (v === 'centered') {
+      content.style.textAlign = 'center';
+      content.style.marginTop = '260px';
+      content.querySelector('.overline').style.justifyContent = 'center';
+      content.querySelector('.overline').style.display = 'flex';
+      content.querySelector('.hero-sub').style.marginLeft = 'auto';
+      content.querySelector('.hero-sub').style.marginRight = 'auto';
+      content.querySelector('.cta-row').style.justifyContent = 'center';
+    } else if (v === 'split') {
+      content.style.textAlign = 'left';
+      content.style.marginTop = '380px';
+      content.querySelector('.overline').style.display = 'inline-flex';
+      content.querySelector('.hero-sub').style.marginLeft = '';
+      content.querySelector('.hero-sub').style.marginRight = '';
+      content.querySelector('.cta-row').style.justifyContent = 'flex-start';
+    } else {
+      content.style.textAlign = 'left';
+      content.style.marginTop = '320px';
+      content.querySelector('.overline').style.display = 'inline-flex';
+      content.querySelector('.hero-sub').style.marginLeft = '';
+      content.querySelector('.hero-sub').style.marginRight = '';
+      content.querySelector('.cta-row').style.justifyContent = 'flex-start';
+    }
+  }
+  function setTone(v) {
+    document.getElementById('phone').dataset.tone = v;
+    const root = document.documentElement;
+    if (v === 'mono') {
+      root.style.setProperty('--surface',        '#fafafa');
+      root.style.setProperty('--surface-low',    '#f2f2f1');
+      root.style.setProperty('--surface-mid',    '#e8e8e6');
+      root.style.setProperty('--surface-high',   '#d8d8d6');
+      root.style.setProperty('--on-surface',     '#1c1c1b');
+      root.style.setProperty('--on-surface-var', '#6a6a68');
+    } else if (v === 'warm') {
+      root.style.setProperty('--surface',        '#fbf6ef');
+      root.style.setProperty('--surface-low',    '#f3ebde');
+      root.style.setProperty('--surface-mid',    '#ebdfcb');
+      root.style.setProperty('--surface-high',   '#ddcfb3');
+      root.style.setProperty('--on-surface',     '#3a2e22');
+      root.style.setProperty('--on-surface-var', '#7a6b57');
+    } else {
+      // cream (default)
+      root.style.setProperty('--surface',        '#fbf9f6');
+      root.style.setProperty('--surface-low',    '#f5f3f0');
+      root.style.setProperty('--surface-mid',    '#efeeea');
+      root.style.setProperty('--surface-high',   '#e3e3de');
+      root.style.setProperty('--on-surface',     '#313330');
+      root.style.setProperty('--on-surface-var', '#6b6d68');
+    }
+  }
+
+  // tiny hex mixer
+  function mix(a, b, t) {
+    const pa = parseHex(a), pb = parseHex(b);
+    const r = Math.round(pa[0] + (pb[0]-pa[0]) * t);
+    const g = Math.round(pa[1] + (pb[1]-pa[1]) * t);
+    const bl= Math.round(pa[2] + (pb[2]-pa[2]) * t);
+    return '#' + [r, g, bl].map(n => n.toString(16).padStart(2, '0')).join('');
+  }
+  function parseHex(h) {
+    h = h.replace('#', '');
+    return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+  }
+
+  // ─────────── Wire up Tweaks UI ───────────
+  const nameIn = document.getElementById('tk-name');
+  const nameKrIn = document.getElementById('tk-name-kr');
+  nameIn.value = TW.studioName;
+  nameKrIn.value = TW.studioNameKr;
+  nameIn.addEventListener('input', () => {
+    setName(nameIn.value, nameKrIn.value);
+    persist({ studioName: nameIn.value });
+  });
+  nameKrIn.addEventListener('input', () => {
+    persist({ studioNameKr: nameKrIn.value });
+  });
+
+  document.querySelectorAll('#tk-swatches .sw').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('#tk-swatches .sw').forEach(s => s.classList.remove('on'));
+      el.classList.add('on');
+      const c = el.dataset.c;
+      setPrimary(c);
+      persist({ primaryColor: c });
+    });
+  });
+
+  document.querySelectorAll('#tk-hero button').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('#tk-hero button').forEach(b => b.classList.remove('on'));
+      el.classList.add('on');
+      setHero(el.dataset.v);
+      persist({ heroVariant: el.dataset.v });
+    });
+  });
+  document.querySelectorAll('#tk-tone button').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('#tk-tone button').forEach(b => b.classList.remove('on'));
+      el.classList.add('on');
+      setTone(el.dataset.v);
+      persist({ tone: el.dataset.v });
+    });
+  });
+
+  // chip row (contact programs) — simple toggles
+  document.querySelectorAll('.chip-row .chip').forEach(c => {
+    c.addEventListener('click', () => c.classList.toggle('on'));
+  });
+
+  // ─────────── Initial apply ───────────
+  setPrimary(TW.primaryColor);
+  setName(TW.studioName, TW.studioNameKr);
+  setTone(TW.tone);
+  setHero(TW.heroVariant);
+
+  // reflect saved state in the UI
+  const sw = document.querySelector(`#tk-swatches .sw[data-c="${TW.primaryColor}"]`);
+  if (sw) { document.querySelectorAll('#tk-swatches .sw').forEach(s => s.classList.remove('on')); sw.classList.add('on'); }
+  const hb = document.querySelector(`#tk-hero button[data-v="${TW.heroVariant}"]`);
+  if (hb) { document.querySelectorAll('#tk-hero button').forEach(b => b.classList.remove('on')); hb.classList.add('on'); }
+  const tb = document.querySelector(`#tk-tone button[data-v="${TW.tone}"]`);
+  if (tb) { document.querySelectorAll('#tk-tone button').forEach(b => b.classList.remove('on')); tb.classList.add('on'); }
+})();
+</script>
+
+</body>
+</html>

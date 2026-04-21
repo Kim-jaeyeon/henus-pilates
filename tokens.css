@@ -1,0 +1,21 @@
+/* Serene Sanctuary tokens */
+:root {
+  --surface:           #fbf9f6;
+  --surface-low:       #f5f3f0;
+  --surface-mid:       #efeeea;
+  --surface-high:      #e3e3de;
+  --surface-lowest:    #ffffff;
+  --primary:           #5a6247;
+  --primary-soft:      #7c8663;
+  --primary-container: #dee6c4;
+  --on-primary:        #f5fdda;
+  --on-primary-container:#3b4229;
+  --secondary:         #a6894f;
+  --secondary-container:#efe4ca;
+  --on-surface:        #313330;
+  --on-surface-var:    #6b6d68;
+  --outline:           #b2b2ae;
+
+  --serif: "Noto Serif KR", "Noto Serif", "Nanum Myeongjo", "Times New Roman", serif;
+  --sans:  "Pretendard", "Manrope", -apple-system, system-ui, sans-serif;
+}
