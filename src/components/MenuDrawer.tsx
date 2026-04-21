@@ -91,19 +91,6 @@ export default function MenuDrawer({ open, onClose, studioName, sections }: Prop
           ))}
         </nav>
 
-        {/* Bottom CTA */}
-        <div className="mt-auto pt-12">
-          <button
-            className="btn btn-primary w-full justify-center"
-            onClick={onClose}
-            style={{ fontSize: 14 }}
-          >
-            무료 체험 예약
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" style={{ width: 13, height: 13 }}>
-              <path d="M2 8h12M9 3l5 5-5 5" />
-            </svg>
-          </button>
-        </div>
       </div>
     </>
   );

@@ -112,10 +112,10 @@ const henusPilates: StudioConfig = {
       badge:    '4월 한정 이벤트',
       title:    '봄 맞이 할인 · 지금 등록하세요',
       bullets:  [
-        '5:1 소그룹 24회+24회 · 3개월+3개월 — 59만원',
-        '5:1 소그룹 50회+50회 · 6개월+6개월 — 96만원 (VAT 별도)',
+        '24회+24회 · 3개월+3개월 — 59만원',
+        '50회+50회 · 6개월+6개월 — 96만원 (VAT별도)',
         '4/15까지 등록 시 3회 수업 서비스 증정',
-        '2인 나눠쓰기 가능 · 시작일 지정 가능',
+        '2인 나눠쓰기 · 시작일 지정 가능',
         '경기지역화폐 사용 가능',
       ],
       imageUrl: 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260401_159%2F1775036061219m8NsD_JPEG%2F2604%25C0%25CC%25BA%25A5%25C6%25AE.jpg',

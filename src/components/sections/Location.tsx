@@ -41,7 +41,7 @@ export default function Location({ config }: { config: LocationConfig }) {
                   <div style={{ fontSize: 14, lineHeight: 1.55, color: 'var(--on-surface)' }}>
                     <strong style={{
                       fontFamily: 'var(--serif)', fontWeight: 500, fontSize: 17,
-                      display: 'block', marginBottom: 2,
+                      display: 'block', marginBottom: 2, wordBreak: 'keep-all', overflowWrap: 'anywhere',
                     }}>
                       {strong}
                     </strong>

@@ -24,86 +24,90 @@ export default function Pricing({ config }: { config: PricingConfig }) {
           )}
         </div>
 
-        <div className="max-md:flex max-md:flex-col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, alignItems: 'stretch' }}>
-
-          {/* Event card */}
-          {config.event && (
-            <div data-animate style={{ ...d(120), borderRadius: 20, overflow: 'hidden',
+        {/* Event card */}
+        {config.event && (
+          <div data-animate className="max-sm:flex-col sm:grid"
+            style={{ ...d(120), borderRadius: 20, overflow: 'hidden', marginBottom: 12,
               background: 'rgba(255,255,255,0.10)', backdropFilter: 'blur(8px)',
               boxShadow: 'inset 0 0.5px 0 rgba(255,255,255,0.18)',
               display: 'flex', flexDirection: 'column',
+              gridTemplateColumns: '1fr auto',
             }}>
-              <div style={{ padding: '22px 22px 16px', display: 'flex', flexDirection: 'column', gap: 10, flex: 1 }}>
-                {config.event.badge && (
-                  <span style={{
-                    display: 'inline-block', alignSelf: 'flex-start',
-                    fontSize: 9, letterSpacing: '1.2px', textTransform: 'uppercase', fontWeight: 700,
-                    padding: '4px 10px', borderRadius: 99,
-                    background: 'var(--primary-container)', color: 'var(--on-primary-container)',
-                  }}>
-                    {config.event.badge}
-                  </span>
-                )}
-                <div style={{
-                  fontFamily: 'var(--serif)', fontWeight: 500, fontSize: 18,
-                  color: 'var(--on-primary)', letterSpacing: '-0.3px', lineHeight: 1.35,
+            {/* Text */}
+            <div style={{ padding: '22px 22px 16px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {config.event.badge && (
+                <span style={{
+                  display: 'inline-block', alignSelf: 'flex-start',
+                  fontSize: 9, letterSpacing: '1.2px', textTransform: 'uppercase', fontWeight: 700,
+                  padding: '4px 10px', borderRadius: 99,
+                  background: 'var(--primary-container)', color: 'var(--on-primary-container)',
                 }}>
-                  {config.event.title}
-                </div>
-                <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 6 }}>
-                  {config.event.bullets.map((b) => (
-                    <li key={b} style={{ fontSize: 12, color: 'rgba(255,255,255,0.80)', display: 'flex', alignItems: 'flex-start', gap: 7, lineHeight: 1.5 }}>
-                      <span style={{ width: 3, height: 3, borderRadius: 99, background: 'var(--primary-container)', flexShrink: 0, marginTop: 6 }} />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {config.event.imageUrl && (
-                <div style={{ display: 'flex', justifyContent: 'center', padding: '0 20px 20px' }}>
-                  <img src={config.event.imageUrl} alt={config.event.title}
-                    style={{ width: '80%', height: 'auto', display: 'block', borderRadius: 12 }} />
-                </div>
+                  {config.event.badge}
+                </span>
               )}
+              <div style={{
+                fontFamily: 'var(--serif)', fontWeight: 500, fontSize: 'clamp(15px, 1.4vw, 18px)',
+                color: 'var(--on-primary)', letterSpacing: '-0.3px', lineHeight: 1.35,
+              }}>
+                {config.event.title}
+              </div>
+              <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 7 }}>
+                {config.event.bullets.map((b) => (
+                  <li key={b} style={{ fontSize: 12, color: 'rgba(255,255,255,0.80)', display: 'flex', alignItems: 'flex-start', gap: 7, lineHeight: 1.6, wordBreak: 'keep-all', overflowWrap: 'anywhere' }}>
+                    <span style={{ width: 3, height: 3, borderRadius: 99, background: 'var(--primary-container)', flexShrink: 0, marginTop: 6 }} />
+                    <span dangerouslySetInnerHTML={{ __html: b }} />
+                  </li>
+                ))}
+              </ul>
             </div>
-          )}
+            {/* Image — bottom on mobile, right on sm+ */}
+            {config.event.imageUrl && (
+              <div className="max-sm:pb-5 sm:py-4 sm:pr-4" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src={config.event.imageUrl} alt={config.event.title}
+                  className="max-sm:w-2/3 sm:w-auto"
+                  style={{ height: 'auto', display: 'block', borderRadius: 14,
+                    width: 'clamp(120px, 16vw, 160px)' }} />
+              </div>
+            )}
+          </div>
+        )}
 
-          {/* Tier cards */}
+        {/* Tier cards — 2-col on mobile, keep in grid on desktop */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12, alignItems: 'stretch' }}>
           {config.tiers.map((tier, i) => (
             <div key={tier.name} data-animate style={{ ...d(200 + i * 100), borderRadius: 20,
-              padding: '22px 22px 22px',
+              padding: '20px 18px',
               background: tier.featured ? 'var(--surface)' : 'rgba(255,255,255,0.08)',
               color: tier.featured ? 'var(--on-surface)' : 'var(--on-primary)',
               backdropFilter: tier.featured ? undefined : 'blur(8px)',
               boxShadow: tier.featured ? '0 16px 40px rgba(49,51,48,0.12)' : 'inset 0 0.5px 0 rgba(255,255,255,0.15)',
               display: 'flex', flexDirection: 'column',
             }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                <h4 style={{ fontFamily: 'var(--serif)', fontWeight: 500, fontSize: 18, letterSpacing: '-0.3px', margin: 0 }}>{tier.name}</h4>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10, gap: 6 }}>
+                <h4 style={{ fontFamily: 'var(--serif)', fontWeight: 500, fontSize: 16, letterSpacing: '-0.3px', margin: 0, lineHeight: 1.3 }}>{tier.name}</h4>
                 {tier.badge && (
                   <span style={{
-                    fontSize: 9, letterSpacing: '1px', textTransform: 'uppercase',
-                    padding: '4px 9px', borderRadius: 99, fontWeight: 700, whiteSpace: 'nowrap',
+                    fontSize: 8, letterSpacing: '0.8px', textTransform: 'uppercase',
+                    padding: '3px 7px', borderRadius: 99, fontWeight: 700, whiteSpace: 'nowrap', flexShrink: 0,
                     background: 'var(--primary-container)', color: 'var(--on-primary-container)',
                   }}>{tier.badge}</span>
                 )}
               </div>
-              <div style={{ fontFamily: 'var(--serif)', fontSize: 30, fontWeight: 500, letterSpacing: '-0.8px', lineHeight: 1, marginBottom: 14 }}>
+              <div style={{ fontFamily: 'var(--serif)', fontSize: 26, fontWeight: 500, letterSpacing: '-0.6px', lineHeight: 1, marginBottom: 12 }}>
                 {tier.price}
-                <span style={{ fontFamily: 'var(--sans)', fontSize: 12, fontWeight: 500, marginLeft: 4,
+                <span style={{ fontFamily: 'var(--sans)', fontSize: 11, fontWeight: 500, marginLeft: 3,
                   color: tier.featured ? 'var(--on-surface-var)' : 'rgba(255,255,255,0.65)' }}>{tier.unit}</span>
               </div>
-              <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 7, flex: 1 }}>
+              <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
                 {tier.features.map((f) => (
-                  <li key={f} style={{ fontSize: 13, display: 'flex', alignItems: 'center', gap: 9, opacity: 0.85 }}>
-                    <span style={{ width: 4, height: 4, borderRadius: 99, background: 'currentColor', flexShrink: 0 }} />
+                  <li key={f} style={{ fontSize: 12, display: 'flex', alignItems: 'flex-start', gap: 7, opacity: 0.85, lineHeight: 1.4 }}>
+                    <span style={{ width: 3, height: 3, borderRadius: 99, background: 'currentColor', flexShrink: 0, marginTop: 5 }} />
                     {f}
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-
         </div>
 
         <div className="flex justify-center mt-8" data-animate style={d(400)}>

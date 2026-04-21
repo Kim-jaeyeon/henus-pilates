@@ -20,7 +20,7 @@ export default function Footer({ studioName, config }: Props) {
             <div style={{ fontFamily: 'var(--serif)', color: '#fff', fontSize: 22, fontWeight: 500, letterSpacing: '-0.3px', marginBottom: 12 }}>
               {studioName}
             </div>
-            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13, lineHeight: 1.6 }}>
+            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13, lineHeight: 1.6, wordBreak: 'keep-all', overflowWrap: 'anywhere' }}>
               {config.address}
             </div>
             <div style={{ fontSize: 13, marginTop: 4, color: 'rgba(255,255,255,0.5)' }}>
@@ -63,7 +63,7 @@ export default function Footer({ studioName, config }: Props) {
         {/* Bottom bar */}
         <div className="flex flex-wrap items-center justify-between gap-4 mt-10 pt-6"
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.4px' }}>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.4px', wordBreak: 'keep-all', overflowWrap: 'anywhere' }}>
             {config.copyright}
             {config.businessNumber && ` · 사업자등록 ${config.businessNumber}`}
           </div>

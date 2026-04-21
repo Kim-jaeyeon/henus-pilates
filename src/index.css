@@ -266,16 +266,24 @@ body {
   font-family: var(--serif); font-weight: 500;
   font-size: clamp(28px, 3.5vw, 44px);
   line-height: 1.08; letter-spacing: -0.8px;
-  margin: 10px 0 8px; color: var(--on-surface); text-wrap: balance;
+  margin: 10px 0 8px; color: var(--on-surface);
+  text-wrap: balance; word-break: keep-all;
 }
 .section-h3 em { font-style: italic; color: var(--primary); }
 .bg-sage .section-h3 em { color: var(--primary-container); }
 
 .section-p {
   font-size: 14px; color: var(--on-surface-var);
-  line-height: 1.7; margin: 0; text-wrap: pretty;
+  line-height: 1.7; margin: 0;
+  text-wrap: pretty; word-break: keep-all; overflow-wrap: anywhere;
 }
 @media (min-width: 768px) { .section-p { font-size: 15px; } }
+
+/* ─── Global Korean word-break ───────────────────────────── */
+p, li, span, h1, h2, h3, h4, address, strong {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
 
 /* ─── Buttons ────────────────────────────────────────────── */
 .btn {
