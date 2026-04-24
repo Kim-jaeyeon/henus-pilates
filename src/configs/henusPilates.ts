@@ -39,12 +39,15 @@ const henusPilates: StudioConfig = {
     headline:    '4대 기구로 완성하는<br><em>맞춤</em> 필라테스.',
     description: '리포머·캐딜락·체어·바렐로 전신을 균형 있게.',
     items: [
-      { num: '01', name: '1:1 프라이빗',   description: '개인 전용룸 · 1:1 맞춤 지도 · 체형 교정 집중' },
-      { num: '02', name: '듀엣 2:1',        description: '2인 프라이빗 레슨 · 함께 시작하는 필라테스' },
-      { num: '03', name: '5:1 그룹',        description: '소그룹 기구 수업 · 리포머 중심 그룹 클래스' },
-      { num: '04', name: '리포머',          description: '대표 필라테스 기구 · 전신 근력·유연성 향상' },
-      { num: '05', name: '캐딜락',          description: '재활·교정 특화 · 깊은 근육 활성화' },
-      { num: '06', name: '체어 & 바렐',     description: '코어 강화 · 균형 및 안정성 트레이닝' },
+      { num: '01', name: '1:1 프라이빗',    description: '개인 전용룸 · 1:1 맞춤 지도 · 체형 교정 집중' },
+      { num: '02', name: '5:1 그룹 · 50분', description: '소그룹 기구 수업 · 리포머 중심 그룹 클래스' },
+      { num: '03', name: '8회 · 1개월',     description: '240,000원 (25%↓) · 1회 30,000원 · VAT별도' },
+      { num: '04', name: '16회 · 2개월',    description: '416,000원 (35%↓) · 1회 26,000원 · VAT별도' },
+      { num: '05', name: '24회 · 3개월',    description: '576,000원 (40%↓) · 1회 24,000원 · VAT별도' },
+      { num: '06', name: '36회 · 5개월',    description: '720,000원 (50%↓) · 1회 20,000원 · VAT별도' },
+      { num: '07', name: '48회 · 6개월',    description: '864,000원 (55%↓) · 1회 18,000원 · VAT별도' },
+      { num: '08', name: '72회 · 9개월',    description: '1,008,000원 (65%↓) · 1회 14,000원 · VAT별도' },
+      { num: '09', name: '100회 · 12개월',  description: '990,000원 (75%↓) · 1회 9,900원 · VAT별도' },
     ],
   },
 
@@ -109,17 +112,16 @@ const henusPilates: StudioConfig = {
     headline:    '나에게 맞는<br><em>수업</em>을 선택하세요.',
     description: '체험 레슨으로 먼저 경험해보세요.',
     event: {
-      badge:   '1:5 GROUP · 50MIN',
-      title:   '그룹 정기권 가격 (VAT별도)',
-      bullets: [
-        '8회 → <strong>240,000원</strong> (25%↓) · 1회 30,000원',
-        '16회 → <strong>416,000원</strong> (35%↓) · 1회 26,000원',
-        '24회 → <strong>576,000원</strong> (40%↓) · 1회 24,000원',
-        '36회 → <strong>720,000원</strong> (50%↓) · 1회 20,000원',
-        '48회 → <strong>864,000원</strong> (55%↓) · 1회 18,000원',
-        '72회 → <strong>1,008,000원</strong> (65%↓) · 1회 14,000원',
-        '100회 → <strong>990,000원</strong> (75%↓) · 1회 9,900원',
+      badge:    '4월 한정 이벤트',
+      title:    '봄 맞이 할인 · 지금 등록하세요',
+      bullets:  [
+        '24회+24회 · 3개월+3개월 — 59만원',
+        '50회+50회 · 6개월+6개월 — 96만원 (VAT별도)',
+        '4/15까지 등록 시 3회 수업 서비스 증정',
+        '2인 나눠쓰기 · 시작일 지정 가능',
+        '경기지역화폐 사용 가능',
       ],
+      imageUrl: 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260401_159%2F1775036061219m8NsD_JPEG%2F2604%25C0%25CC%25BA%25A5%25C6%25AE.jpg',
     },
     tiers: [
       {
