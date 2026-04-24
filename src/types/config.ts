@@ -141,6 +141,10 @@ export interface StudioConfig {
     addressDetail?: string;
     hoursWeekday: string;
     hoursWeekend: string;
+    hours?: {
+      rows: { day: string; time: string; closed?: boolean }[];
+      note?: string;
+    };
     transit: string;
     parking?: string;
     phone: string;

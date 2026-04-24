@@ -109,16 +109,17 @@ const henusPilates: StudioConfig = {
     headline:    '나에게 맞는<br><em>수업</em>을 선택하세요.',
     description: '체험 레슨으로 먼저 경험해보세요.',
     event: {
-      badge:    '4월 한정 이벤트',
-      title:    '봄 맞이 할인 · 지금 등록하세요',
-      bullets:  [
-        '24회+24회 · 3개월+3개월 — 59만원',
-        '50회+50회 · 6개월+6개월 — 96만원 (VAT별도)',
-        '4/15까지 등록 시 3회 수업 서비스 증정',
-        '2인 나눠쓰기 · 시작일 지정 가능',
-        '경기지역화폐 사용 가능',
+      badge:   '1:5 GROUP · 50MIN',
+      title:   '그룹 정기권 가격 (VAT별도)',
+      bullets: [
+        '8회 → <strong>240,000원</strong> (25%↓) · 1회 30,000원',
+        '16회 → <strong>416,000원</strong> (35%↓) · 1회 26,000원',
+        '24회 → <strong>576,000원</strong> (40%↓) · 1회 24,000원',
+        '36회 → <strong>720,000원</strong> (50%↓) · 1회 20,000원',
+        '48회 → <strong>864,000원</strong> (55%↓) · 1회 18,000원',
+        '72회 → <strong>1,008,000원</strong> (65%↓) · 1회 14,000원',
+        '100회 → <strong>990,000원</strong> (75%↓) · 1회 9,900원',
       ],
-      imageUrl: 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260401_159%2F1775036061219m8NsD_JPEG%2F2604%25C0%25CC%25BA%25A5%25C6%25AE.jpg',
     },
     tiers: [
       {
@@ -156,6 +157,18 @@ const henusPilates: StudioConfig = {
     addressDetail: '위너스타빌딩 10층 10호',
     hoursWeekday:  '평일 · 문의',
     hoursWeekend:  '주말 · 문의',
+    hours: {
+      rows: [
+        { day: '월', time: '09:00 – 22:00' },
+        { day: '화', time: '09:00 – 22:00' },
+        { day: '수', time: '09:00 – 22:00' },
+        { day: '목', time: '09:00 – 22:00' },
+        { day: '금', time: '09:00 – 22:00' },
+        { day: '토', time: '10:00 – 12:00' },
+        { day: '일', time: '정기휴무', closed: true },
+      ],
+      note: '※ 05/01 노동절 · 05/05 어린이날 휴무',
+    },
     transit:       '동탄 버스 정류장 인근',
     phone:         '010-7653-2354',
     email:         'henuspilates@naver.com',
