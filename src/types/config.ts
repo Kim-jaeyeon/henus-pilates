@@ -150,6 +150,7 @@ export interface StudioConfig {
     phone: string;
     kakao?: string;
     email?: string;
+    naverMapUrl?: string;
   };
 
   // ─── Contact ────────────────────────────────────────────

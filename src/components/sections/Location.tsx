@@ -108,6 +108,29 @@ export default function Location({ config }: { config: LocationConfig }) {
               <span style={{ width: 6, height: 6, borderRadius: 99, background: 'var(--primary)', display: 'block' }} />
               {config.district}
             </div>
+            {config.naverMapUrl && (
+              <a
+                href={config.naverMapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-5 py-2.5 rounded-full"
+                style={{
+                  background: 'rgba(251,249,246,0.92)',
+                  backdropFilter: 'blur(12px)',
+                  fontSize: 12, fontWeight: 600,
+                  boxShadow: '0 2px 16px rgba(49,51,48,0.13)',
+                  whiteSpace: 'nowrap',
+                  color: 'var(--on-surface)',
+                  textDecoration: 'none',
+                }}
+              >
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: 13, height: 13, color: 'var(--primary)' }}>
+                  <path d="M8 2C5.79 2 4 3.79 4 6c0 3 4 8 4 8s4-5 4-8c0-2.21-1.79-4-4-4z" />
+                  <circle cx="8" cy="6" r="1.5" fill="currentColor" stroke="none" />
+                </svg>
+                네이버 지도로 확인하기
+              </a>
+            )}
           </div>
 
         </div>

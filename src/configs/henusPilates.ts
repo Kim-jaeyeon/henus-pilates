@@ -174,6 +174,7 @@ const henusPilates: StudioConfig = {
     transit:       '동탄 버스 정류장 인근',
     phone:         '010-7653-2354',
     email:         'henuspilates@naver.com',
+    naverMapUrl:   'https://naver.me/GvcE5hgv',
   },
 
   contact: {
